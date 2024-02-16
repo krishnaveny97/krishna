@@ -1,0 +1,13 @@
+.hei{
+    height: 68em;
+}
+.openToWork{
+    background-color: rgb(132, 196, 156);
+    border-radius: 15%;
+    height: 3%;
+    width: 45%;
+    font-size: small;
+}
+.link{
+    text-decoration: none;
+}

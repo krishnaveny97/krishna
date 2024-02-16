@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col">
+       <a href="#" class="link" *ngIf="showLink"  (click)="onClick('Company Description.......... ')"><h5>Company</h5></a> 
+    </div>
+    <div class="col">
+        <a href="#" *ngIf="showLink"  class="link" (click)="onClick('Job Description ..........')"><h5>Job Desc</h5></a> 
+        <h5></h5>
+    </div>
+    <div class="col">
+        <a href="#" *ngIf="showLink"  class="link"><h5>Responsibilities</h5></a> 
+       
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+       
+    </div>
+</div>
+<div class="row">
+    <div class="col  p-3">
+       
+        <button *ngIf="showButton" type="button" class="btn btn-info">Apply Job</button>
+    </div>
+    <div class="col p-3 ">
+        <button *ngIf="showButton" type="button" class="btn btn-secondary">Message</button>
+    </div>
+</div>
+
+

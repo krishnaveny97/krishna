@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <input class="form-control mt-2 search" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="col-12">
+                        <div class="col-12  mt-3 border border-dark rounded-1 " *ngFor="let e of arr"  (click)="selectOption(e)">
+                            <div class="row mt-3 "  *ngIf="e.display">
+                                <div class="col-2 ">
+                                    <img [src]="e.backgroundimg" alt="">
+                                   </div>
+                                   <div class="col-8">
+                                       <div class="row d-flex flex-column">
+                                        <div class="col">
+                                            <h5>{{e.jobname}}</h5>
+                                        </div>
+                                        <div class="col mt-4">
+                                            <p class="bolds"><span class="clr">{{e.place}}</span> .Location</p>
+                                       </div>
+                                       </div>
+                                   </div>
+                                   
+                                   <div class="col">
+                                    <img [src]="e.rightimage" alt="">
+                               </div>
+                    
+                            </div>
+                            <div class="row">
+                                <div class="col mt-4">
+                                   We are looking for a UI/ux Designer to turn our software in to easy-to use products for our clients.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex  mt-3 p-3">
+                                   
+                                    <button>{{e.typeofemployment}}</button>
+                                    <button class="ml-2">{{e.experienclevel}}</button>
+                                    <button class="ml-2">{{e.rate}}</button>
+                                    <button class="ml-2">{{e.location}}</button>
+                                    <button class="ml-2">{{e.site}}</button>
+                                   </div>
+                    
+                                </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <app-child [selectedOption]="selectedOption" ></app-child>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+
+
+
+
+   
+
+
+
+
+
+
+       
+           
+            
+
+               
+    

@@ -1,0 +1,26 @@
+.row{
+    background-color: rgb(238, 237, 235);
+}
+.header{
+    text-decoration: none;
+}
+.right{
+    display: flex;
+}
+.search{
+    width: 50%;
+    height: 90%;
+}
+.bolds{
+    font-weight:bold ;
+
+}
+.clr{
+    color: aqua;
+}
+button{
+    border-radius: 30%;
+    color: rgb(226, 254, 254);
+    background-color: rgb(174, 177, 180);
+    font-weight: bold;
+}

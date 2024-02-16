@@ -1,0 +1,18 @@
+<div>
+    <app-filter [all]="getAllBooks()" [free]="getFreeBooks()" [premium]="getPremiumBooks()" (message)="getData($event)"></app-filter>
+     {{messageFromChild}}
+</div>
+<div style="display: flex;" >
+    <div *ngFor="let e of course" style="margin-left: 35px;">
+        <img [src]="e.bimage" alt="">
+        <h1>{{e.Name}}</h1>
+        <h3>{{e.id}}</h3>
+        <h3>{{e.Author}}</h3>
+        <button type="button" class="btn btn-info mx-5 bo" id="button">view</button>
+        
+        </div>
+
+</div>
+
+
+

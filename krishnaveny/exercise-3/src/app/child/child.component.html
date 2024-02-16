@@ -1,0 +1,120 @@
+
+    <div class="row">
+        
+        <div class="col">
+            <img [src]="selectedOption?.imag" alt="" *ngIf="selectedOption" width="100%" height="90%">
+            
+            <img [src]="selectedOption?.backgroundimg" alt="" *ngIf="selectedOption" class="logoimg">
+            
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-8">
+            <p>{{selectedOption.appicants}}</p>
+        </div>
+        <div class="col-4 " >
+            <p class="text-end">{{selectedOption.postedjobs}}</p>
+        </div>
+
+    </div>
+    <div class="row mt-3" *ngIf="selectedOption">
+        <div class="col-10">
+        <h3>{{selectedOption.jobname}}</h3>
+        </div>
+        <div class="col-2">
+            <h1><img [src]=" selectedOption?.rightimage"  alt=""></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="bolds"><span class="clr">{{selectedOption.place}}</span> {{selectedOption.Location}}</p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col">
+                <img [src]="selectedOption?.im" alt="">
+                </div>
+                <div class="col">
+                  <p>{{selectedOption.typeofemploymentper}}</p>
+                  <p>{{selectedOption.typeofemployment}}</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col">
+                    <img [src]="selectedOption?.im"alt="">
+                </div>
+                <div class="col">
+                  <p>{{selectedOption.locationper}}</p>
+                  <p>{{selectedOption.location}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col">
+                    <img [src]="selectedOption?.im" alt="">
+                </div>
+                <div class="col mr-4">
+                  <p>{{selectedOption.experienclevelper}}</p>
+                  <p>{{selectedOption.experienclevel}}</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col">
+                    <img [src]="selectedOption?.im" alt="">
+                </div>
+                <div class="col">
+                  <p>{{selectedOption.siteper}}</p>
+                  <p>{{selectedOption.site}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col">
+                    <img [src]="selectedOption?.im" alt="">
+                </div>
+                <div class="col  mr-4">
+                  <p> {{selectedOption.rateper}}</p>
+                  <p>{{selectedOption.rate}}</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <app-detaildispaly   [showLink]="displayLink" (linkClicked)="onLinkClicked($event)" [showButton]="displayButton" ></app-detaildispaly>
+                {{ descriptionMessage }}
+            </div>
+           
+        </div>
+        
+    </div>
+   
+ 
+   
+  
+
+
+   
+
+
